@@ -1,0 +1,70 @@
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background:lightpink; color: #333; }
+    header {
+      background: #e91e63;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    header h1 { font-size: 22px;
+      margin-bottom: 10px;
+      
+     }
+    nav { display: flex;
+       gap: 15px;
+        flex-wrap: wrap;
+        margin-left: 40px;
+      }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      margin: 15px 0;
+    
+    }
+    nav a:hover { text-decoration: underline; }
+
+    .search-bar {
+      margin: 20px auto;
+      text-align: center;
+    }
+    .search-bar input {
+      width: 80%;
+      max-width: 400px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .card:hover { transform: scale(1.03); }
+    .card img {
+      max-width: 100%;
+      height: 200px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+    .title { font-size: 16px; font-weight: bold; margin-bottom: 8px; }
+    .desc { font-size: 13px; color: #555; margin-bottom: 10px; height: 50px; overflow: hidden; }
+    .price { font-size: 18px; color: #e91e63; font-weight: bold; margin-bottom: 8px; }
+    .category { font-size: 12px; color: #777; }
